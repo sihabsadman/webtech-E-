@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Portal login </title>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <center>
+  <img src="portal_logo_website_dark.png" alt="portal_logo_website_dark" width="300" height="200"></center>
+</tr>
+<div class="navbar">
+      <ul>
+        <center><a href="home.html">HOME</a></center>
+        <center><a href="registration.html">Registration</a></center>
+        <center><a href="login.html">LOGIN</a></center>
+      </ul>
+      <hl>
+    </div>
+</br>
+<form method="post" action="login.php">
+  <center>
+   </table>
+<body>
+
+<fieldset align="center">
+<h3>LOGIN</h3>
+
+     <table border="1"> 
+       <label for="name"><b>Username</b></label>
+       <input type="text" placeholder="Enter name" name="name" required>
+  <br>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Password" name="psw" required>
+     </br>
+   </table>
+  
+      <button type="submit">Login</button>
+      <label>
+         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+       <br> 
+       <input type="checkbox" checked="checked" name="remember"> Remember me </br>
+      </label>
+    </div>
+
+    <div class="container" style="background-color:white ">
+
+      <center><a href="reset.html" >FORGET PASSWORD?</a></center>
+    </div>
+  </form>
+</div>
+
+<script>
+var model = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == model) {
+        model.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
+
+
